@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light the light</title>
+    <style>
+        .outbox {
+            height: 700px;
+            position: relative;
+            background-color: #32cc894d;
+            border: 1px solid rgba(136, 174, 208, 0.467);
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: Center;
+            /*水平居中*/
+            margin: 0 auto;
+            /*垂直居中*/
+        }
+        .midbox {
+            height: 200px;
+            width: 200px;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            position: absolute;
+            line-height: 100px;
+            justify-content: center;
+            align-items: Center;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        /* .button1 {
+            width: 250px;
+            height: 250px;
+            font-size: 20px;
+            color: #023407f3;
+            border: 9px solid rgba(7, 139, 0, 0.881);
+            background: rgba(35, 199, 199, 0.921);
+        } */
+        .button1 {
+            width: 150px;
+            height: 150px;
+            font-weight: 600;
+            font-size: 35px;
+            color: darkcyan;
+            border: 9px solid darkcyan;
+            background: LightCyan;
+            border-radius: 50%;
+        }
+        .close {
+            color: LightCyan;
+            border: 9px solid darkcyan;
+            background: darkcyan;
+        }
+
+        .space {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" outbox">
+        <div class="midbox">
+            <a href='./LED?light_button=0' class='a'>
+                <button type='button1' class='button1 center close'>关灯</button>
+            </a>
+
+        </div>
+    </div>
+</body>
+
+</html>
